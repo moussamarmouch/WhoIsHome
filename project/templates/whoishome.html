@@ -1,0 +1,9 @@
+<!-- templates/profile.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+{% for i in range(0, len)%}
+    <h1 class="title"> {{puts[i]}} </h1>
+{% endfor %}
+{% endblock %}
