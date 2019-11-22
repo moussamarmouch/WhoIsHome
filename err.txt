@@ -1,0 +1,6 @@
+WARNING: Could not obtain IP address for interface eth0. Using 0.0.0.0 for
+the source address, which may not be what you want.
+Either configure eth0 with an IP address, or manually specify the address
+with the --arpspa option.
+ERROR: Could not obtain interface IP address and netmask
+ERROR: pcap_lookupnet: eth0: no IPv4 address assigned
