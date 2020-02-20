@@ -53,7 +53,6 @@ def whoishome():
             return render_template('whoishome.html', len=len(ar), puts=ar)
         else:
             log.write("Curl niet gelukt     " + localtime + '\n')
-            log.close()
 
 
     # Start methode 2, als methode 1 niet lukt
