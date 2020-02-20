@@ -1,0 +1,422 @@
+<!-- TEMPLATE: common/pages/templates/macros/page.ftl -->
+<!-- TEMPLATE: common/telenetbe/templates/macro.ftl -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="/mijntelenet/static/css/mijntelenet/main.css" rel="stylesheet" type="text/css"/>
+    <link href="/mijntelenet/static/css/mijntelenet/fonts-telenet.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="//static.telenet.be/assets/fonts/omnes-breuer-logo/stylesheet.css">
+    <link href="/mijntelenet/static/css/mijntelenet/lookupMessage.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body onload="setTimeout(function(){ location.reload(); }, 0);">
+
+    <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <!-- head New design-->
+    <script type="text/javascript" language="JavaScript"> if(!window.console){ window.console = {log: function(){} }; } </script>
+    <title>Mijn Telenet</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="maven.project.name" content="MijnTelenet War"/>
+    <meta name="maven.project.version" content="20.02.6"/>
+    <meta name="maven.project.build" content="202002121027"/>
+    <meta name="user.language" content="nl"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="imagetoolbar" content="no"/>
+    <meta name="ROBOTS" content="INDEX, NOFOLLOW"/>
+    <meta name="referrer" content="always" />
+    <meta name="keywords" content="Telenet, Televisie, Internet, Telefonie, self-service, beheren" />
+    <meta name="description" content="Mijn Telenet, dat is je Telenet-diensten zelf eenvoudig beheren, je verbruik in het oog houden, aanrekening bekijken en opties activeren." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="shortcut icon" href="//static.telenet.be/assets/favicon/favicon.ico" type="image/x-icon"/>
+    <link href="/mijntelenet/static/css/mijntelenet/fonts-telenet.css" rel="stylesheet" type="text/css"/>
+
+
+    <!--[if IE]>
+    <style>
+        strong {
+            font-family: 'BreuerTextBold';
+        }
+    </style>
+
+    <![endif]-->
+
+
+        <link rel="shortcut icon" href="//static.telenet.be/assets/favicon/favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="//static.telenet.be/assets/fonts/omnes-breuer-logo/stylesheet.css">
+        <link rel="stylesheet" href="/mijntelenet/static/vs-2/css/vendor/normalize.min.css">
+        <link rel="stylesheet" href="/mijntelenet/static/vs-2/css/main.css">
+        <link rel="stylesheet" href="/mijntelenet/static/vs-2/css/content.css">
+        <script src="/mijntelenet/static/vs-2/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/mijntelenet/static/js/utils/ie.shims.js"></script>
+    <script type="text/javascript" src="/mijntelenet/static/js/utils/html5shiv.js"></script>
+    <script type="text/javascript" src="/mijntelenet/static/js/utils/json3.min.js"></script>
+    <![endif]-->
+
+    <script src="//assets.adobedtm.com/7261243a02ffe3c24292c016f619311d3e672e4c/satelliteLib-d974a92e85a1d85882ae16a8327bb2a05d48dc93.js"></script>
+    <script type="text/javascript" language="JavaScript"> var MT = {}; </script>
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/mt/mt-natives.js?version=202002121027"></script>
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/mt/mt-tealium.js?version=202002121027"></script>
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/mt/mt-environment.js?version=202002121027"></script>
+    <!--[if gt IE 9]>
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/mt/mt-logger.js?version=202002121027"></script>
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/mt/mt-request-interceptor.js?version=<202002121027"></script>
+    <![endif]-->
+
+    <script>
+        MT.environment.setEnvironment('prd');
+
+        if (!!MT.logger && MT.environment.isProduction()) {
+            MT.logger.disableLogger();
+        }
+    </script>
+
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/common.js?version=202002121027"></script>
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/ga/ga.js"></script>
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/ext/jQuery/jquery-1.7.2-patched.js"></script>
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/jQuery/jquery.tools.min.js"></script>
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/jQuery/jquery.watermark.min.js"></script>
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/jQuery/jquery.cookie.js"></script>
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/jQuery/jquery.blockUI.js"></script>
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/ext/highcharts/highcharts.js"></script>
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/jQuery/jquery.uniform.js"></script>
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/prototype/prototype.js"></script>
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/prototype/scriptaculous.js?load=effects,builder"></script>
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/ext/ipaddr/ipaddr.min.js"></script>
+
+        <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/angular/angular.1.2.4.min.js"></script>
+        <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/angular/angular-sanitize.1.2.4.min.js"></script>
+        <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/angular-ui/ui-bootstrap-tpls-0.7.0.min.js"></script>
+        <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/angular-block-ui/angular-block-ui.min.js"></script>
+        <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/directives/telenetDirectives.js"></script>
+        <link href="/mijntelenet/static/css/angular-block-ui/angular-block-ui.css" rel="stylesheet" type="text/css"/>
+
+            <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/searchbox/searchBox_directives.js"></script>
+            <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/searchbox/searchBox_controllers.js"></script>
+            <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/searchbox/searchBox_app.js"></script>
+
+            <link href="/mijntelenet/static/css/mijntelenet/searchBox.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript" language="JavaScript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/cms.js?version=202002121027"></script>
+
+    <script type="text/javascript" language="JavaScript" src="/mijntelenet/static/js/overlay.js?version=202002121027"></script>
+
+    <script src="/mijntelenet/static/vs-2/js/main.js"></script>
+
+
+        <script type="text/javascript" language="javascript">
+
+            jQuery(document).ready(function($){
+                $("#zoekPanel").remove();
+
+                $(".TopPanel_en #winkelgedeelte").remove();
+
+                $("#departmentLink_MTN").addClass("active"); // * Actief navigatie-item
+
+
+                $(".showHideContainer .showhide").live("click", function() {
+                    var showHideContainer = $(this).parents(".showHideContainer");
+                    showHideContainer.find(".showhide").toggle();
+                    showHideContainer.find(".showhidden").fadeToggle();
+                });
+            });
+
+        </script>
+
+
+
+    <!-- CMS region with id overlay_oauth_callback -->
+
+    <script type="text/javascript" language="javascript">
+        jQuery.noConflict();
+
+        jQuery(document).ready(function(){
+
+            // Google Analytics
+            gaSetupPageTracker ('prd','.telenet.be', 'nl', '');
+
+            //default configurations for tooltips (done by jQueryTools plugin)
+            jQuery.extend(jQuery.tools.tooltip.conf, {
+                // place tooltip on the right edge
+                position: "bottom right",
+
+                // a little tweaking of the position
+                offset: [5, 5],
+
+                // use the built-in fadeIn/fadeOut effect
+                effect: "fade",
+
+                // custom opacity setting
+                opacity: 1.0
+            });
+
+            //default configuration for tabs (done by jQueryTools plugin)
+            jQuery("ul.mijnTelenetTabs").tabs("div.panes > div", {
+                //use css 'on' class for the current tab
+                current: 'on'
+
+            });
+        });
+
+    </script>
+
+    <!--[if lte IE 9]>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery('.roundboxPackAlert').bind('style', function(e) {
+                var containerZenderPacksChildren = jQuery('#containerZenderPacks').find('.roundboxPackAlert, .shopProduct > div, label');
+                for(var i = 0; i < containerZenderPacksChildren.length; i++) {
+                    containerZenderPacksChildren[i].className = containerZenderPacksChildren[i].className;
+                }
+            });
+        });
+    </script>
+    <![endif]-->
+</head>
+<body  class="Subpage"   >
+<div class="template-wrapper"
+     
+     
+>
+<!-- Shared header start -->
+<script>
+    jQuery( document ).ready(function() {
+
+        jQuery(".menu-icon").click(function(){
+            if (jQuery("input.menu-toggle").is(':checked')==false) {
+                jQuery(".mobile-nav").show();
+            }
+            if (jQuery("input.menu-toggle").is(':checked')===true && jQuery(".prof.current").length !== 0) {
+            jQuery(".knownUser-menu").show();
+        }
+        });
+
+        jQuery(".languages").click(function(){
+            jQuery('.languages').toggleClass('current');
+            if( jQuery(".languages.current").length !== 0) {
+                jQuery(".languages-mobile").show();
+            } else {
+                jQuery(".languages-mobile").hide();
+            }
+    });
+
+        jQuery('.prof').on('click', function(){
+            jQuery('.prof').toggleClass('current');
+            if( jQuery(".prof.current").length !== 0) {
+                jQuery(".knownUser-menu").show();
+            } else {
+                jQuery(".knownUser-menu").hide();
+            }
+            jQuery(".mobile-nav").hide();
+            if(jQuery(".prof.current").length === 0 && jQuery("input.menu-toggle").is(':checked')===true ) {
+             jQuery(".mobile-nav").show();
+    }
+        });
+        jQuery('.websites').on('click', function(){
+            jQuery('.websites').toggleClass('current');
+            if( jQuery(".websites.current").length !== 0) {
+                jQuery(".websites-overlay").show();
+                jQuery(".websites ul").css('height','315px');
+            } else {
+                jQuery(".websites-overlay").hide();
+                jQuery(".websites ul").css('height','20px');
+            }
+        });
+
+
+
+
+    });
+
+</script>
+<div class="headerbg">
+<div class="Header">
+    <div class="logo-bar">
+        <div class="inner-container">
+
+            <div class="logo">
+                <a href="https://www2.telenet.be/nl/">
+                    <img src="/mijntelenet/static/images/telenet_headerlogo.svg">
+                </a>
+            </div>
+            <div class="searchBoxArea mobileOnly">
+
+
+                <div class="prof">
+
+                </div>
+
+
+                <input class="menu-toggle" type="checkbox" id="menu-toggle">
+                <label class="menu-icon mobile-icon" for="menu-toggle"><span class="nav-icon"></span></label>
+
+                <div class="searchBar">
+                    <div class="searchBarWhite">
+                        <div class="searchBarForm">
+                            <form>
+
+<div id="searchBoxAppId_mobile">
+    <div class="search-kls" ng-controller="SearchBoxCtrl as ctrl" data-ng-init="ctrl.init(
+    'nl',
+    'https://www2.telenet.be/nl/klantenservice/#/pages=1/search_term=',
+    'https://www2.telenet.be/fr/serviceclient/#/pages=1/search_term=',
+    'http://apgcusMngdVip.prd.cust.telenet:19082/searchapi/gsa/api/suggest/',
+    '?collection=default_NL&amp;frontend=nl_rmd&amp;language=nl',
+    '?collection=ocp_coll_fr&amp;frontend=ocp_front_fr&amp;language=fr')">
+        <form ng-submit="ctrl.submit($event)">
+            <div class="form-container">
+                <div class="defaultcell textinthemiddle searchBoxLeft">
+                    <div class="searchBoxField">
+                        <searchboxautocomplete
+                                id="searchBoxInput"
+                                data-ng-model="ctrl.text"
+                        attr-placeholder="Zoeken"
+                        on-suggestion-click="ctrl.handleSuggestionClick"
+                        data="ctrl.suggestions"
+                        attr-input-id="searchBoxInput"
+                        attr-input-class="tn_searchbutton"
+                        on-type="ctrl.getSuggestions"></searchboxautocomplete>
+
+                    </div>
+                </div>
+                <div class="searchBoxButton defaultcell textinthemiddle">
+                    <input type="submit" class="tn_searchbutton" value=""/>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript">
+    angular.bootstrap(document.getElementById("searchBoxAppId_mobile"), ["searchBox_app"])
+</script><!-- TEMPLATE: common/telenetbe/templates/search.ftl -->
+                            </form>
+                        </div>
+                        <figure class="searchBarClose"></figure>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="cmp cmp-logo">
+ <div class="logo">
+     <a href="https://www2.telenet.be/nl/"><img class="hidden-mobile" src="/mijntelenet/static/images/telenet_headerlogo.svg"></a>
+ </div>
+    </div>
+    <div class="mytelenet-nav">
+        <div class="top-header">
+            <div class="top-left">
+                <div class="left-nav">
+                    <ul class="pagelist_mainnav">
+                <li class="active"><a href="https://www2.telenet.be/nl/">PRIVÉ</a></li>
+                <li><a href="https://www2.telenet.be/nl/business/">BUSINESS</a></li>
+                    </ul>
+                </div>
+                <div class="top-left-dropdown">
+            
+                    <div class="websites">
+                <ul>
+	<li>ALLE WEBSITES</li>
+	<li><a href="https://www2.telenet.be/nl/klantenservice/#/menu=selfservice" target="_blank">MIJN TELENET</a></li>
+	<li><a href="http://webmail.telenet.be" target="_blank">WEBMAIL</a></li>	
+	<li><a href="https://www.playsports.be/" target="_blank">PLAY SPORTS</a></li>
+	<li><a href="https://www.yeloplay.be/" target="_blank">YELO PLAY</a></li>
+	<li><a href="https://www.netweters.be/" target="_blank">NETWETERS</a></li>
+	<li><a href="https://snap.telenet.be/" target="_blank">SNAP!</a></li>
+        <li><a href="https://www2.telenet.be/content/www-telenet-be/nl/jobs" target="_blank">JOBS</a></li>
+        <li><a href="https://www2.telenet.be/nl/corporate/home/" target="_blank">CORPORATE</a></li>
+</ul>
+                        <span class="dropdown-menu__selector-indicator"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="top-right">
+
+
+                <div class="languages">
+                    <ul>
+                        <li class="lang_nl active"><a
+                                href="/mijntelenet/locale/locale.do?locale=nl&goto=http%3A%2F%2Fmijn.telenet.be%2Fmijntelenet%2Foauth%2Fcallback.do%3Fcode%3D1WE0LGGUSp0o41wUvWP2qcdCJRsYamS4%26state%3De1d0f517-3c90-4be6-a09e-c7cd265ec3bc">NL</a></li>
+                        <li class="lang_fr"><a
+                                href="/mijntelenet/locale/locale.do?locale=fr&goto=http%3A%2F%2Fmijn.telenet.be%2Fmijntelenet%2Foauth%2Fcallback.do%3Fcode%3D1WE0LGGUSp0o41wUvWP2qcdCJRsYamS4%26state%3De1d0f517-3c90-4be6-a09e-c7cd265ec3bc">FR</a></li>
+                        <li class="lang_en"><a href="https://www2.telenet.be/en/">EN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav-container">
+            <nav class="menu">
+                    <ul>
+            <li><a href="https://www2.telenet.be/nl/producten/wigo">Producten</a></li>
+            <li><a href="https://www2.telenet.be/nl/promos/overzicht/promos-in-de-kijker">Promo's</a></li>
+            <li><a href="https://www2.telenet.be/nl/netwerk-en-kwaliteit/overzicht/ons-netwerk">Netwerk & kwaliteit</a></li>
+            <li><a href="https://www2.telenet.be/nl/klantenservice/">Klantenservice</a></li>
+        </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="extra-container">
+    <div class="inner-container">
+        <div class="backLink">
+            <a href="http://www.telenet.be/nl/klantenservice/">Naar veelgestelde vragen</a>
+        </div>
+
+
+        <a href="http://www.telenet.be/nl/klantenservice/#/menu=selfservice/">
+            <div class="mtButton">
+                <div>
+                    <img src="/mijntelenet/static/vs-2/images/unknown.png">
+                    <span>Mijn Telenet</span>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+</div>
+
+    <div class="mobile_warning">
+            <div class="orange_box_mobile">
+Deze pagina is niet geoptimaliseerd voor mobiele toestellen, voor een optimale ervaring raden we je aan om deze te bezoeken via een pc of tablet.            </div>
+    </div>
+<!-- TEMPLATE: common/telenetbe/templates/header_nl.ftl -->
+<!-- Shared header end -->
+
+<div id="ContentPane">
+    <center>
+        <div class="BoxBorderHolder">
+
+            <!-- TOP BORDER -->
+            <div class="BoxBorderMiddle" id="lookupMessageBody" style="z-index: 1000;">
+                <div id="spinnerBox">
+                    <img src="/mijntelenet/static/gfx/ajax-loader.gif"/>
+                    <br/><br/>
+                    <strong>Je gegevens worden opgehaald.<br/>Dit kan enkele ogenblikken duren.</strong>
+                </div>
+
+            </div>
+        </div>
+    </center>
+    <div class="greyOutLoadingPage">
+</div>
+</div>
+</body>
+</html>
+<!-- TEMPLATE: common/openid/templates/lookupMessage.ftl -->

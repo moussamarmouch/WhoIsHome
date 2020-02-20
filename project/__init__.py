@@ -1,23 +1,32 @@
 # init.py
-
-from flask import Flask
+from flask import Flask, json
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager 
-
+from waitress import serve
+from flask_simple_geoip import SimpleGeoIP
 # init SQLAlchemy so we can use it later in our models
 db = SQLAlchemy()
 
 def create_app():
     app = Flask(__name__)
 
-    app.config['SECRET_KEY'] = '9OLWxND4o83j4K4iuopO'
+    app.config['SECRET_KEY'] = '0984GGdh5489nfg:/dg.978GVfgh'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
-
+    app.config['GEOIPIFY_API_KEY'] = "at_p1YeARMghjhdKSLbimwnGwrH9WoTJ"
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db.init_app(app)
+#    with app.app_context():
+#	simple_geoip = SimpleGeoIP(app)
+#	data = simple_geoip.get_geoip_data() 
+#      	with open('locaties.xml', 'w+') as bes1:
+#		print(json.dumps(data, indent=2))
 
     login_manager = LoginManager()
     login_manager.login_view = 'auth.login'
     login_manager.init_app(app)
+
+
+
 
     from .models import User
 

@@ -21,7 +21,9 @@
 		transform: rotate(359deg)
 	}
 }
+}
 body{
+	color: #fff;!important
 	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 .login{
@@ -109,7 +111,7 @@ body{
 
 .delete::after,
 .delete::before,
-.modal-close::after,
+.cxmodal-close::after,
 .modal-close::before {
 	background-color: #fff;
 	content: "";
@@ -390,7 +392,10 @@ th {
 }
 
 html {
-	background-color: #fff;
+	background-#4a4a4a;
+font-size: 0.6rem;
+font-weight: 400;
+line-height: 1.5;color: #fff;
 	font-size: 16px;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
@@ -429,9 +434,14 @@ pre {
 	font-family: monospace
 }
 
-body {
-	color: #4a4a4a;
-	font-size: 1rem;
+    color: 
+    #4a4a4a;
+    font-size: 0.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+}body {
+	color: #fff;
+	font-size: 0.6rem;
 	font-weight: 400;
 	line-height: 1.5
 }
@@ -5454,7 +5464,7 @@ a.tag:hover {
 }
 
 .title {
-	color: #363636;
+	color: #00b89c;
 	font-size: 3rem;
 	font-weight: 600;
 	line-height: 1.125
@@ -10155,10 +10165,8 @@ print {
 		background-image: linear-gradient(141deg, #1f191a 0, #363636 71%, #46403f 100%)
 	}
 }
-
 .hero.is-primary {
 	background-color: #00d1b2;
-	color: #fff
 }
 
 .hero.is-primary a:not(.button):not(.dropdown-item):not(.tag),
@@ -10167,7 +10175,6 @@ print {
 }
 
 .hero.is-primary .title {
-	color: #fff
 }
 
 .hero.is-primary .subtitle {

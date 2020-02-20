@@ -1,0 +1,2 @@
+curl -L -b cookies.txt "https://mijn.telenet.be/mijntelenet/rgw/settings.do?identifier=z087809&action=showAdvancedSettings" > c_out.txt
+

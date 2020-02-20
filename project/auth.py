@@ -5,9 +5,11 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import login_user, logout_user, login_required, current_user
 from .models import User
 from . import db
+import time
+
 
 auth = Blueprint('auth', __name__)
-
+localtime = time.asctime(time.localtime(time.time()))
 @auth.route('/login')
 def login():
     return render_template('login.html')
@@ -15,6 +17,9 @@ def login():
 @auth.route('/login', methods=['POST'])
 def login_post():
     name = request.form.get('name')
+    error = open('err.txt', 'a')
+    error.write(name + ' is aangemeld  ' + localtime + '\n')
+    error.close()
     password = request.form.get('password')
     remember = True if request.form.get('remember') else False
 
