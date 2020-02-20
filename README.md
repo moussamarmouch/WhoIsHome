@@ -10,7 +10,7 @@ De voorwaarde is wel dat de server waar de site opstaat lokaal verbonden is met 
 ## Waarom ben ik hier aan begonnen?
 
 Ik ben aan dit project begonnen omdat ik buiten school ook nog graag wilde leren. Ik vind python, netwerken, linux en webdesign erg interessant,
-ook wilde ik graag weten wie er thuis was. Daarom ben ik begonnen aan dit project, ik ben van plan om er nog veel functies aan toe te voegen over tijd
+ook wilde ik graag weten wie er thuis was. Daarom ben ik begonnen aan dit project. Ik ben van plan om er nog veel functies aan toe te voegen over tijd
 en de bestaande functies te verbeteren en onderhouden.
 
 ## Hoe werkt het?
@@ -19,7 +19,7 @@ Allereerst heb ik een simpele site gemaakt met [Flask](https://flask.palletsproj
 [Flask](https://flask.palletsprojects.com/en/1.1.x/) is erg goed gedocumenteerd, dus ik heb daar heel veel informatie en uitleg kunnen krijgen. Ook heb ik verschillende tutorials kunnen raadplegen.
 Aan de site heb ik een login scherm met een userdatabase aan toegevoegd. 
 
-Op 2 verschillende manier wordt er gekeken naar wie er thuis is.
+Op 2 verschillende manieren wordt er gekeken naar wie er thuis is.
 
 #### - Telenet site met cookies
 
@@ -45,7 +45,7 @@ subprocess.call("sudo arp-scan --interface=wlan0 --localnet --plain | cut -f 2",
 
 ### Wat heb ik ervan geleerd?
 
-Ik heb veel meer geleerd van dit project dan dat ik verwacht had, maar toen ik steeds verder kwam met "WhoIsHome" en verschillende problemen tegenkwam en die moest proberen op te lossen was het toch een stuk moeilijker dan verwacht.
+Ik heb veel meer geleerd van dit project dan dat ik verwacht had, maar toen ik steeds verder kwam met "WhoIsHome" en verschillende problemen tegenkwam die ik moest proberen op te lossen was het toch een stuk moeilijker dan verwacht.
 Door de lessen 'Linux Essentials" op school was ik al een beetje bekend met Linux, maar door dit project heb ik zeer veel bijgeleerd. Zo heb ik bijvoorbeeld een bash script moeten schijven die de server automatisch opnieuw start als het proces gestopt is.
 
 
@@ -58,14 +58,14 @@ Door de lessen 'Linux Essentials" op school was ik al een beetje bekend met Linu
 - [Curl](https://curl.haxx.se/)
 - Netwerken 
 
-Ik heb erg veel tijd in dit project gestoken en ik ben er nog niet klaar mee, ik wil graag zorgen dat alles altijd goed werkt, omdat er nog een aantal fouten inzitten of dingen die beter kunnen. 
-Ook ben ik nog van plan om nog meerdere functies aan de site toe te voegen. En wil ik graag gebruik maken van nginx in plaats van waitress, maar dit was nog een beetje moeilijk.
+Ik heb erg veel tijd in dit project gestoken en ik ben er nog niet klaar mee. Ik wil graag zorgen dat alles altijd goed werkt, omdat er nog een aantal fouten inzitten of dingen die beter kunnen. 
+Ook ben ik van plan om nog meerdere functies aan de site toe te voegen. En wil ik graag gebruik maken van nginx in plaats van waitress, maar dit was nog een beetje moeilijk.
 
 ### Wat vond ik nog moeilijk?
 
-Aan het begin wist ik nog helemaal niks over Flask, maar na heel veel filmpjes gezien te hebben, en code te bekijken van Flask voorbeelden heb ik een aardig beeld gekregen over hoe het in elkaar steekt.
+Aan het begin wist ik nog helemaal niks over Flask, maar na heel veel filmpjes gezien te hebben, en voorbeelden van code in Flask te hebben bekeken heb ik een aardig beeld gekregen over hoe het in elkaar steekt.
 
-Ook wilde ik graag in het begin een ngnix server gebruiken, maar dit bleek nog wat te moeilijk te zijn, daarom heb ik waitress gebruikt omdat het wat eenvoudiger is en het toch maar een lichte webapplicatie was.
+Ook wilde ik graag in het begin een ngnix server gebruiken, maar dit bleek nog wat te moeilijk te zijn. Daarom heb ik waitress gebruikt omdat het wat eenvoudiger is en het toch maar een lichte webapplicatie was.
 Het netwerk gedeelte vond ik ook wat moeilijk aan het begin, omdat ik graag mijn site ook van buiten mijn thuisnetwerk wilde kunnen bereiken, maar ik niet wist hoe ik hier aan moest beginnen.
 
 
