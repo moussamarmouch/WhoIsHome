@@ -57,6 +57,7 @@ Door de lessen 'Linux Essentials" op school was ik al een beetje bekend met Linu
 - [Waitress](https://docs.pylonsproject.org/projects/waitress/en/stable/#) (De WSGI server die ik gebruikt heb)
 - [Curl](https://curl.haxx.se/)
 - Netwerken 
+- HTML templates maken
 
 Ik heb erg veel tijd in dit project gestoken en ik ben er nog niet klaar mee. Ik wil graag zorgen dat alles altijd goed werkt, omdat er nog een aantal fouten inzitten of dingen die beter kunnen. 
 Ook ben ik van plan om nog meerdere functies aan de site toe te voegen. En wil ik graag gebruik maken van nginx in plaats van waitress, maar dit was nog een beetje moeilijk.
