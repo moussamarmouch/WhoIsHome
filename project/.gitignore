@@ -1,0 +1,3 @@
+    app.config['SECRET_KEY'] = '0984GGdh5489nfg:/dg.978GVfgh'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
+    app.config['GEOIPIFY_API_KEY'] = "at_p1YeARMghjhdKSLbimwnGwrH9WoTJ"
